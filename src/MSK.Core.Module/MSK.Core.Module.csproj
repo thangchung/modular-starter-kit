@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MSK.Core.Module.Entity\MSK.Core.Module.Entity.csproj" />
+    <ProjectReference Include="..\MSK.Core.Module.Mvc\MSK.Core.Module.Mvc.csproj" />
+  </ItemGroup>
+
+</Project>

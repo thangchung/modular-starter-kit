@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="MSK.Application.Module.targets" Pack="true">
+      <PackagePath>build\$(TargetFramework)\MSK.Application.Module.targets</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MSK.Application.Module.Data\MSK.Application.Module.Data.csproj" />
+    <ProjectReference Include="..\MSK.Application.Module.Identity\MSK.Application.Module.Identity.csproj" />
+  </ItemGroup>
+
+</Project>
