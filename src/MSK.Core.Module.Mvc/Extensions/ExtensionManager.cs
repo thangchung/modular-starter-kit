@@ -109,7 +109,7 @@ namespace MSK.Core.Module.Mvc.Extensions
             {
                 foreach (var subFolder in _hostingEnvironment
                    .ContentRootFileProvider
-                     .GetDirectoryContents("packages")
+                     .GetDirectoryContents("modules")
                      .Where(x => x.IsDirectory))
                 {
                     var manifestsubPath = searchOption.SearchPath + '/' + subFolder.Name;

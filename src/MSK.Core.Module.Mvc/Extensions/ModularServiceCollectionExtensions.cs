@@ -13,7 +13,7 @@ namespace MSK.Core.Module.Mvc.Extensions
     {
         public static IServiceCollection AddMvcModules(this IServiceCollection services)
         {
-            services.AddExtensionLocation("packages");
+            services.AddExtensionLocation("modules");
 
             var builder = services.AddMvc().AddViewLocalization();
             AddModularRazorViewEngine(services);

@@ -1,0 +1,3 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="MSK.Core.Module\MSK.Core.Module.Targets.xml" />
+</Project>

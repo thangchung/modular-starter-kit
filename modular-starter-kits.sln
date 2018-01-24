@@ -17,26 +17,33 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C588662B-56D4-4B06-931C-D623E4039919}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B213888-3705-409C-8C91-46065046EB59}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "crypto-currency", "crypto-currency", "{5D65C946-C776-40FE-90D8-9E61E08530E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Core.Module", "src\MSK.Core.Module\MSK.Core.Module.csproj", "{030DF62D-599A-47B8-B3BE-A712BA4BC2AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Core.Module", "src\MSK.Core.Module\MSK.Core.Module.csproj", "{030DF62D-599A-47B8-B3BE-A712BA4BC2AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Support.Module", "src\MSK.Support.Module\MSK.Support.Module.csproj", "{E1989CFF-8E09-4B8B-A1EE-155931930739}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Support.Module", "src\MSK.Support.Module\MSK.Support.Module.csproj", "{E1989CFF-8E09-4B8B-A1EE-155931930739}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "standard", "standard", "{E7095FD9-6342-44F3-A53B-518D8FF10C86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Core.Module.Mvc", "src\MSK.Core.Module.Mvc\MSK.Core.Module.Mvc.csproj", "{905ED608-BB91-4D68-863A-B94E715433FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Core.Module.Mvc", "src\MSK.Core.Module.Mvc\MSK.Core.Module.Mvc.csproj", "{905ED608-BB91-4D68-863A-B94E715433FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Core.Module.Entity", "src\MSK.Core.Module.Entity\MSK.Core.Module.Entity.csproj", "{F2EE28B8-2805-44E8-A996-997A98D9984E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Core.Module.Entity", "src\MSK.Core.Module.Entity\MSK.Core.Module.Entity.csproj", "{F2EE28B8-2805-44E8-A996-997A98D9984E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Application.Module", "src\MSK.Application.Module\MSK.Application.Module.csproj", "{E9E0550A-A8A3-4145-B291-B6230A5DB919}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Application.Module", "src\MSK.Application.Module\MSK.Application.Module.csproj", "{E9E0550A-A8A3-4145-B291-B6230A5DB919}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Application.Module.Data", "src\MSK.Application.Module.Data\MSK.Application.Module.Data.csproj", "{7D1D73CF-DE87-45FE-A328-797EC050D523}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Application.Module.Data", "src\MSK.Application.Module.Data\MSK.Application.Module.Data.csproj", "{7D1D73CF-DE87-45FE-A328-797EC050D523}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Application.Module.Identity", "src\MSK.Application.Module.Identity\MSK.Application.Module.Identity.csproj", "{A475794E-82A0-4BD5-BF08-12AA7A4BC71B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Application.Module.Identity", "src\MSK.Application.Module.Identity\MSK.Application.Module.Identity.csproj", "{A475794E-82A0-4BD5-BF08-12AA7A4BC71B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Support.Module.Swagger", "src\MSK.Support.Module.Swagger\MSK.Support.Module.Swagger.csproj", "{61863B60-F371-4AF0-BD81-11ECAD565B51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Support.Module.Swagger", "src\MSK.Support.Module.Swagger\MSK.Support.Module.Swagger.csproj", "{61863B60-F371-4AF0-BD81-11ECAD565B51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Samples.CryptoCurrency", "samples\cryptocurrency\MSK.Samples.CryptoCurrency\MSK.Samples.CryptoCurrency.csproj", "{B8237A0E-9BCE-4BF6-9935-30EE63BE8E93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Samples.CryptoCurrency.WebApp", "samples\cryptocurrency\MSK.Samples.CryptoCurrency.WebApp\MSK.Samples.CryptoCurrency.WebApp.csproj", "{731955F2-2B68-4F39-B0C7-9C61C8E3BB27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -76,6 +83,14 @@ Global
 		{61863B60-F371-4AF0-BD81-11ECAD565B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61863B60-F371-4AF0-BD81-11ECAD565B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61863B60-F371-4AF0-BD81-11ECAD565B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8237A0E-9BCE-4BF6-9935-30EE63BE8E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8237A0E-9BCE-4BF6-9935-30EE63BE8E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8237A0E-9BCE-4BF6-9935-30EE63BE8E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8237A0E-9BCE-4BF6-9935-30EE63BE8E93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{731955F2-2B68-4F39-B0C7-9C61C8E3BB27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{731955F2-2B68-4F39-B0C7-9C61C8E3BB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{731955F2-2B68-4F39-B0C7-9C61C8E3BB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{731955F2-2B68-4F39-B0C7-9C61C8E3BB27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +107,8 @@ Global
 		{7D1D73CF-DE87-45FE-A328-797EC050D523} = {4B213888-3705-409C-8C91-46065046EB59}
 		{A475794E-82A0-4BD5-BF08-12AA7A4BC71B} = {4B213888-3705-409C-8C91-46065046EB59}
 		{61863B60-F371-4AF0-BD81-11ECAD565B51} = {4B213888-3705-409C-8C91-46065046EB59}
+		{B8237A0E-9BCE-4BF6-9935-30EE63BE8E93} = {5D65C946-C776-40FE-90D8-9E61E08530E6}
+		{731955F2-2B68-4F39-B0C7-9C61C8E3BB27} = {5D65C946-C776-40FE-90D8-9E61E08530E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1778A799-EEAD-4A1E-BF1D-F243DD42978C}
