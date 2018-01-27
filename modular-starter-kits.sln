@@ -45,7 +45,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Samples.CryptoCurrency"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Samples.CryptoCurrency.WebApp", "samples\cryptocurrency\MSK.Samples.CryptoCurrency.WebApp\MSK.Samples.CryptoCurrency.WebApp.csproj", "{731955F2-2B68-4F39-B0C7-9C61C8E3BB27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Core.Module.Utils", "MSK.Core.Module.Utils\MSK.Core.Module.Utils.csproj", "{5213ADE5-AAF6-4FFD-B646-352C3D669DC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Core.Module.Utils", "src\MSK.Core.Module.Utils\MSK.Core.Module.Utils.csproj", "{5213ADE5-AAF6-4FFD-B646-352C3D669DC3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Application.Module.Migration", "src\MSK.Application.Module.Migration\MSK.Application.Module.Migration.csproj", "{D577E84F-14AB-4EBE-AFBA-B4559E5C2DD6}"
 EndProject

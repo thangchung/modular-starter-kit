@@ -1,5 +1,13 @@
-# modular-starter-kits
+﻿# modular-starter-kits
 The starter kits with entire modular approach to help remove boilerplate code in developing
+
+# Modular Architecture
+
+- Module Dependency
+
+﻿<p align="center">
+  <img align="center" class="image" src="https://github.com/thangchung/modular-starter-kits/blob/master/assets/module-dependency.png">  
+</p>
 
 # Migration
 

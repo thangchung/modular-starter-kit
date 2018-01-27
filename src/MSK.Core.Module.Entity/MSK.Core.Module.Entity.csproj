@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\MSK.Core.Module.Utils\MSK.Core.Module.Utils.csproj" />
+    <ProjectReference Include="..\MSK.Core.Module.Utils\MSK.Core.Module.Utils.csproj" />
   </ItemGroup>
 
 </Project>

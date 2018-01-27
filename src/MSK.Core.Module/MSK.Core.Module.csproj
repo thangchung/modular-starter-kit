@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\MSK.Core.Module.Utils\MSK.Core.Module.Utils.csproj" />
     <ProjectReference Include="..\MSK.Core.Module.Entity\MSK.Core.Module.Entity.csproj" />
     <ProjectReference Include="..\MSK.Core.Module.Mvc\MSK.Core.Module.Mvc.csproj" />
+    <ProjectReference Include="..\MSK.Core.Module.Utils\MSK.Core.Module.Utils.csproj" />
   </ItemGroup>
 
 </Project>
