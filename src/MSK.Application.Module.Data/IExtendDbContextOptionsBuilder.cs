@@ -4,6 +4,9 @@ namespace MSK.Application.Module.Data
 {
     public interface IExtendDbContextOptionsBuilder
     {
-        DbContextOptionsBuilder Extend(DbContextOptionsBuilder optionsBuilder, string connectionString, string assemblyName);
+        DbContextOptionsBuilder Extend(
+            DbContextOptionsBuilder optionsBuilder,
+            IDatabaseConnectionStringFactory connectionStringFactory, 
+            string assemblyName);
     }
 }

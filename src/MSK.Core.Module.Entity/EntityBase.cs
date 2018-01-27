@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using MSK.Core.Module.Entity.Helpers;
+using MSK.Core.Module.Utils.Helpers;
 
 namespace MSK.Core.Module.Entity
 {

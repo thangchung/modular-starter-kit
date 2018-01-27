@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MSK.Core.Module.Entity.Helpers
+namespace MSK.Core.Module.Utils.Helpers
 {
     public class EnumHelper
     {

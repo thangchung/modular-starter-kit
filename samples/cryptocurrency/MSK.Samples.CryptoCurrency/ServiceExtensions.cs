@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection;
 using System.Text.Encodings.Web;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -8,8 +7,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MSK.Application.Module.Data;
+using MSK.Application.Module.Data.Extensions;
 using MSK.Core.Module.Entity;
 using MSK.Core.Module.Mvc.Extensions;
+using MSK.Support.Module.Swagger.Extensions;
 
 namespace MSK.Samples.CryptoCurrency
 {
@@ -17,6 +18,8 @@ namespace MSK.Samples.CryptoCurrency
     {
         public static IServiceCollection AddCryptoCurrency(this IServiceCollection services)
         {
+            services.AddDataApplicationModule();
+
             var serviceProvider = services.BuildServiceProvider();
             var config = serviceProvider.GetService<IConfiguration>();
             var extendOptionsBuilder = serviceProvider.GetService<IExtendDbContextOptionsBuilder>();
@@ -27,11 +30,15 @@ namespace MSK.Samples.CryptoCurrency
             services.AddOptions()
                 .Configure<PaginationOption>(config.GetSection("Pagination"));
 
-            services.AddDbContext<ApplicationDbContext>(optionsBuilder => {
-                var assemblyName = Assembly.GetEntryAssembly().GetName().Name;
-                var connectionString = dbConnectionStringFactory.Create();
-                extendOptionsBuilder.Extend(optionsBuilder, connectionString, assemblyName);
-            });
+            void optionsBuilderAction(DbContextOptionsBuilder optionsBuilder)
+            {
+                extendOptionsBuilder.Extend(
+                    optionsBuilder, 
+                    dbConnectionStringFactory, 
+                    "MSK.Samples.CryptoCurrency.Migrator"); // TODO: move to settings
+            }
+
+            services.AddDbContext<ApplicationDbContext>(options => optionsBuilderAction(options));
 
             services.AddScoped<DbContext>(resolver => resolver.GetRequiredService<ApplicationDbContext>());
 
@@ -45,15 +52,13 @@ namespace MSK.Samples.CryptoCurrency
             });
 
             services.AddMvcModules();
-            // services.AddMySwagger();
+            services.AddMySwagger();
             // services.AddMyGraphQL();
 
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/build";
             });
-
-            services.AddGenericDataModule();
 
             return services;
         }
@@ -90,7 +95,7 @@ namespace MSK.Samples.CryptoCurrency
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            // app.UseMySwagger();
+            app.UseMySwagger();
 
             // https://gist.github.com/int128/e0cdec598c5b3db728ff35758abdbafd
             app.UseSpa(spa =>

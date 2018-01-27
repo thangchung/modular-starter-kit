@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MSK.Core.Module.Entity.Helpers
+namespace MSK.Core.Module.Utils.Helpers
 {
     public static class IdHelper
     {

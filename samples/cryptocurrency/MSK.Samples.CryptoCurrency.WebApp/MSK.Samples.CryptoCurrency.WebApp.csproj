@@ -29,6 +29,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ResolvedFileToPublish Remove="msk_cert.pfx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AspNetCore.RouteAnalyzer" Version="0.5.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.1" />
@@ -43,7 +47,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\src\MSK.Application.Module.Migration\MSK.Application.Module.Migration.csproj" />
     <ProjectReference Include="..\..\..\src\MSK.Application.Module\MSK.Application.Module.csproj" />
+    <ProjectReference Include="..\MSK.Samples.CryptoCurrency.Migrator\MSK.Samples.CryptoCurrency.Migrator.csproj" />
     <ProjectReference Include="..\MSK.Samples.CryptoCurrency\MSK.Samples.CryptoCurrency.csproj" />
   </ItemGroup>
 

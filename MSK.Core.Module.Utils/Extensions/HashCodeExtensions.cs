@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MSK.Core.Module.Entity.Extentions
+namespace MSK.Core.Module.Utils.Extensions
 {
     public static class HashCodeExtensions
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MSK.Core.Module.Entity.Extentions;
+using MSK.Core.Module.Utils.Extensions;
 
 namespace MSK.Core.Module.Entity
 {

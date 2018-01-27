@@ -14,7 +14,7 @@ namespace MSK.Samples.CryptoCurrency.WebApp
                 // .AddSqlServerConfiguration()
                 .AddCryptoCurrency()
                 .AddRouteAnalyzer()
-                .BuildServiceProvider(false);
+                .BuildServiceProvider();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

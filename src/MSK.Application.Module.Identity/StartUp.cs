@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection;
 using IdentityServer4.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -18,13 +17,7 @@ namespace MSK.Application.Module.Identity
 {
     public class Startup : StartupBase
     {
-        public override int Order
-        {
-            get
-            {
-                return 1;
-            }
-        }
+        public override int Order => 1;
 
         public override void ConfigureServices(IServiceCollection services)
         {
@@ -37,16 +30,16 @@ namespace MSK.Application.Module.Identity
             var extendOptionsBuilder = serviceProvider.GetService<IExtendDbContextOptionsBuilder>();
             var dbConnectionStringFactory = serviceProvider.GetService<IDatabaseConnectionStringFactory>();
 
-            Action<DbContextOptionsBuilder> optionsBuilderAction =
-                (optionsBuilder) =>
-                {
-                    var assemblyName = Assembly.GetEntryAssembly().GetName().Name;
-                    var connectionString = dbConnectionStringFactory.Create();
-                    extendOptionsBuilder.Extend(optionsBuilder, connectionString, assemblyName);
-                };
+            void optionsBuilderAction(DbContextOptionsBuilder optionsBuilder)
+            {
+                extendOptionsBuilder.Extend(
+                    optionsBuilder, 
+                    dbConnectionStringFactory, 
+                    "MSK.Samples.CryptoCurrency.Migrator"); // TODO: move to settings
+            }
 
             // Adds DbContexts
-            services.AddDbContext<ApplicationDbContext>(options => optionsBuilderAction(options));
+            // services.AddDbContext<ApplicationDbContext>(options => optionsBuilderAction(options));
             services.AddIdentity<ApplicationUser, ApplicationRole>()
               .AddEntityFrameworkStores<ApplicationDbContext>()
               .AddDefaultTokenProviders();
