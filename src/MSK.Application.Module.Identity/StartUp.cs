@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MSK.Application.Module.Data;
 using MSK.Application.Module.Identity.Extensions;
+using MSK.Application.Module.Identity.Models;
 using MSK.Application.Module.Identity.Services;
 using MSK.Core.Module.Entity.Identity;
 using MSK.Core.Module.Mvc;

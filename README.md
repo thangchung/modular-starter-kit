@@ -1,4 +1,5 @@
-﻿# modular-starter-kits
+﻿# modular-starter-kits (MSK)
+
 The starter kits with entire modular approach to help remove boilerplate code in developing
 
 # Modular Architecture

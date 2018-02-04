@@ -7,6 +7,7 @@ using IdentityModel;
 using IdentityServer4.Models;
 using IdentityServer4.Services;
 using Microsoft.AspNetCore.Identity;
+using MSK.Application.Module.Identity.Models;
 using MSK.Core.Module.Entity.Identity;
 
 namespace MSK.Application.Module.Identity.Services

@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
+using MSK.Application.Module.Identity.Models;
 using MSK.Core.Module.Entity.Identity;
 
 namespace MSK.Application.Module.Identity.Services
