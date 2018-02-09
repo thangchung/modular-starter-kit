@@ -3,6 +3,7 @@ using AspNetCore.RouteAnalyzer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using MSK.Samples.CryptoCurrency.WebApp.Extensions;
 
 namespace MSK.Samples.CryptoCurrency.WebApp
 {
@@ -11,7 +12,6 @@ namespace MSK.Samples.CryptoCurrency.WebApp
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             return services
-                // .AddSqlServerConfiguration()
                 .AddCryptoCurrency()
                 .AddRouteAnalyzer()
                 .BuildServiceProvider();

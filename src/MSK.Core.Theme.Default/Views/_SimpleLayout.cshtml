@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CRM Core - @ViewData["Title"]</title>
+
+    <link rel="stylesheet" href="~/all.css"/>
+</head>
+<body class="app flex-row align-items-center">
+<div class="container body-content">
+    @RenderBody()
+</div>
+
+<script src="~/vendors.js"></script>
+
+@RenderSection("scripts", required: false)
+</body>
+</html>

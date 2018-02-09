@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="MSK.Application.Module.targets" Pack="true">
-      <PackagePath>build\$(TargetFramework)\MSK.Application.Module.targets</PackagePath>
+    <None Include="MSK.Application.Module.target" Pack="true">
+      <PackagePath>build\$(TargetFramework)\MSK.Application.Module.target</PackagePath>
     </None>
   </ItemGroup>
 

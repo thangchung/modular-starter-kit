@@ -12,7 +12,7 @@ using MSK.Core.Module.Entity;
 using MSK.Core.Module.Mvc.Extensions;
 using MSK.Support.Module.Swagger.Extensions;
 
-namespace MSK.Samples.CryptoCurrency
+namespace MSK.Samples.CryptoCurrency.WebApp.Extensions
 {
     public static class ServiceExtensions
     {
