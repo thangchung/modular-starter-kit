@@ -23,13 +23,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B213888-370
 		src\Directory.Build.props = src\Directory.Build.props
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cryptocurrency", "cryptocurrency", "{5D65C946-C776-40FE-90D8-9E61E08530E6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bimonetary", "bimonetary", "{5D65C946-C776-40FE-90D8-9E61E08530E6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "standard", "standard", "{E7095FD9-6342-44F3-A53B-518D8FF10C86}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Samples.CryptoCurrency.WebApp", "samples\cryptocurrency\MSK.Samples.CryptoCurrency.WebApp\MSK.Samples.CryptoCurrency.WebApp.csproj", "{731955F2-2B68-4F39-B0C7-9C61C8E3BB27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Samples.BiMonetary.WebApp", "samples\bimonetary\MSK.Samples.BiMonetary.WebApp\MSK.Samples.BiMonetary.WebApp.csproj", "{731955F2-2B68-4F39-B0C7-9C61C8E3BB27}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Samples.CryptoCurrency.Migrator", "samples\cryptocurrency\MSK.Samples.CryptoCurrency.Migrator\MSK.Samples.CryptoCurrency.Migrator.csproj", "{4A489FC3-2F13-4B61-8068-FF279AB90860}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Samples.BiMonetary.Migrator", "samples\bimonetary\MSK.Samples.BiMonetary.Migrator\MSK.Samples.BiMonetary.Migrator.csproj", "{4A489FC3-2F13-4B61-8068-FF279AB90860}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Application.Module.Data", "src\MSK.Application.Module.Data\MSK.Application.Module.Data.csproj", "{FE4C6A96-6C43-4C6B-9FE9-BD8EDF5A834D}"
 EndProject

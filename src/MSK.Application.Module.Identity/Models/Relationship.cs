@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MSK.Core.Module.Entity;
 using MSK.Core.Module.Entity.Identity;
 
 namespace MSK.Application.Module.Identity.Models
 {
-    public class Relationship : IEntity
+    public class Relationship : EntityBase
     {
         public Relationship()
         {
@@ -13,7 +12,6 @@ namespace MSK.Application.Module.Identity.Models
             Followees = new HashSet<ApplicationUser>();
         }
 
-        public Guid Id { get; set; }
         public ICollection<ApplicationUser> Followers { get; set; }
         public ICollection<ApplicationUser> Followees { get; set; }
     }
