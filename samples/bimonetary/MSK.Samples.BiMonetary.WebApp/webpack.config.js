@@ -3,7 +3,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const extractCSS = new ExtractTextPlugin('all.css');
 
@@ -62,14 +61,7 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       Popper: 'popper.js'
-    }),
-    new CopyWebpackPlugin([
-      {
-        context: MODULE_PATH + '/redoc/dist',
-        from: '**/*',
-        to: WWWROOT_PATH + '/vendors/redoc'
-      }
-    ])
+    })
   ],
 
   stats: {

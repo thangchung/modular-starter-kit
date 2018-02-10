@@ -24,6 +24,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4B213888-370
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bimonetary", "bimonetary", "{5D65C946-C776-40FE-90D8-9E61E08530E6}"
+	ProjectSection(SolutionItems) = preProject
+		samples\bimonetary\Directory.Build.props = samples\bimonetary\Directory.Build.props
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "standard", "standard", "{E7095FD9-6342-44F3-A53B-518D8FF10C86}"
 EndProject
@@ -50,6 +53,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Core.Theme.Default", "src\MSK.Core.Theme.Default\MSK.Core.Theme.Default.csproj", "{A8FEDF53-3A90-4842-A7DA-E817FAEE539C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSK.Support.Module.Swagger", "src\MSK.Support.Module.Swagger\MSK.Support.Module.Swagger.csproj", "{61819A5C-7855-43CC-BF48-64B2FAFEDBF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Samples.BiMonetary.Module.CryptoCurrency", "samples\bimonetary\MSK.Samples.BiMonetary.Module.CryptoCurrency\MSK.Samples.BiMonetary.Module.CryptoCurrency.csproj", "{913FB0DD-6AEC-4E44-A2BA-47A438F30E96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Samples.BiMonetary.Module.Social", "samples\bimonetary\MSK.Samples.BiMonetary.Module.Social\MSK.Samples.BiMonetary.Module.Social.csproj", "{8670F063-1811-4FD8-8E3D-06ABA4B2322F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +112,14 @@ Global
 		{61819A5C-7855-43CC-BF48-64B2FAFEDBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61819A5C-7855-43CC-BF48-64B2FAFEDBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61819A5C-7855-43CC-BF48-64B2FAFEDBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913FB0DD-6AEC-4E44-A2BA-47A438F30E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913FB0DD-6AEC-4E44-A2BA-47A438F30E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913FB0DD-6AEC-4E44-A2BA-47A438F30E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913FB0DD-6AEC-4E44-A2BA-47A438F30E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8670F063-1811-4FD8-8E3D-06ABA4B2322F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8670F063-1811-4FD8-8E3D-06ABA4B2322F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8670F063-1811-4FD8-8E3D-06ABA4B2322F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8670F063-1811-4FD8-8E3D-06ABA4B2322F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +140,8 @@ Global
 		{67976E13-5D7B-4F70-8E2E-31F4D7F00526} = {4B213888-3705-409C-8C91-46065046EB59}
 		{A8FEDF53-3A90-4842-A7DA-E817FAEE539C} = {4B213888-3705-409C-8C91-46065046EB59}
 		{61819A5C-7855-43CC-BF48-64B2FAFEDBF2} = {4B213888-3705-409C-8C91-46065046EB59}
+		{913FB0DD-6AEC-4E44-A2BA-47A438F30E96} = {5D65C946-C776-40FE-90D8-9E61E08530E6}
+		{8670F063-1811-4FD8-8E3D-06ABA4B2322F} = {5D65C946-C776-40FE-90D8-9E61E08530E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1778A799-EEAD-4A1E-BF1D-F243DD42978C}

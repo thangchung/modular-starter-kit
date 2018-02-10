@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\MSK.Application.Module.Data\MSK.Application.Module.Data.csproj" />
+    <ProjectReference Include="..\..\..\src\MSK.Application.Module.Migration\MSK.Application.Module.Migration.csproj" />
+    <ProjectReference Include="..\..\..\src\MSK.Core.Module.Target\MSK.Core.Module.Target.csproj" />
+  </ItemGroup>
+
+</Project>

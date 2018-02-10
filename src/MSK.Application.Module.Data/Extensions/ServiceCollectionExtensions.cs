@@ -43,7 +43,7 @@ namespace MSK.Application.Module.Data.Extensions
             string assemblyName)
         {
             return optionsBuilder.UseSqlite(
-                "Data Source=App_Data\\local.db",
+                "Data Source=App_Data\\localdb.db",
                 sqlOptions =>
                 {
                     sqlOptions.MigrationsAssembly(assemblyName);

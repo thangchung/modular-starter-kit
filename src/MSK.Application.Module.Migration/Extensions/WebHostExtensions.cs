@@ -39,9 +39,9 @@ namespace MSK.Application.Module.Migration.Extensions
 
         public static void InstanceSeedData(this IServiceProvider resolver, DbContext context, Type seedData)
         {
-            // TODO: put it to settings
-            var seeders = "MSK.Application.*|MSK.Core.*".ResolveModularGenericTypes(seedData, context.GetType());
             var configuration = resolver.GetService<IConfiguration>();
+            var scanAssemblyPattern = configuration["ScanAssemblyPattern"];
+            var seeders = scanAssemblyPattern.ResolveModularGenericTypes(seedData, context.GetType());
 
             if (seeders == null) return;
 

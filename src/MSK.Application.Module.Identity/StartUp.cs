@@ -9,7 +9,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MSK.Application.Module.Data;
 using MSK.Application.Module.Identity.Extensions;
-using MSK.Application.Module.Identity.Models;
 using MSK.Application.Module.Identity.Services;
 using MSK.Core.Module.Entity.Identity;
 using MSK.Core.Module.Mvc;
@@ -35,12 +34,11 @@ namespace MSK.Application.Module.Identity
             {
                 extendOptionsBuilder.Extend(
                     optionsBuilder, 
-                    dbConnectionStringFactory, 
-                    "MSK.Samples.CryptoCurrency.Migrator"); // TODO: move to settings
+                    dbConnectionStringFactory,
+                    config.GetSection("Migration")["MigrationAssemblyName"]);
             }
 
             // Adds DbContexts
-            // services.AddDbContext<ApplicationDbContext>(options => optionsBuilderAction(options));
             services.AddIdentity<ApplicationUser, ApplicationRole>()
               .AddEntityFrameworkStores<ApplicationDbContext>()
               .AddDefaultTokenProviders();

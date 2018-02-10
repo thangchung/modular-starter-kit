@@ -1,6 +1,6 @@
 {
-  "name": "crypto-currency-webserver",
-  "description": "A crypto currency station client application.",
+  "name": "bimonetary-webserver",
+  "description": "BiMonetary - a crypto currency station client application.",
   "version": "0.1.0",
   "main": "webpack.config.js",
   "repository": "https://github.com/thangchung/modular-starter-kits",
@@ -29,14 +29,13 @@
     "webpack-merge": "4.1.0"
   },
   "dependencies": {
-    "bootstrap": "4.0.0-beta.2",
+    "bootstrap": "4.0.0",
     "font-awesome": "^4.7.0",
     "ignore-loader": "^0.1.2",
     "jquery": "^3.2.1",
     "jquery-validation": "^1.17.0",
     "jquery-validation-unobtrusive": "^3.2.6",
     "popper.js": "^1.12.9",
-    "redoc": "^1.19.3",
     "simple-line-icons": "^2.4.1"
   },
   "scripts": {

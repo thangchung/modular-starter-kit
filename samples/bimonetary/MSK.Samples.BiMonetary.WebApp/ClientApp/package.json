@@ -63,7 +63,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:6666",
+  "proxy": "http://localhost:8888",
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 5.0.0"

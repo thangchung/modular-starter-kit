@@ -1,4 +1,4 @@
-﻿# modular-starter-kits (MSK)
+﻿# modular-starter-kits (a.k.a MSK)
 
 The starter kits with entire modular approach to help remove boilerplate code in developing
 
@@ -13,11 +13,11 @@ The starter kits with entire modular approach to help remove boilerplate code in
 # Migration
 
 ```
-dotnet ef migrations add InitialId4ConfigDbMigration -c ConfigurationDbContext -o Migrations/ConfigDb
+dotnet ef migrations add InitialConfigDbMigration -c ConfigurationDbContext -o Migrations/ConfigDb
 ```
 
 ```
-dotnet ef migrations add InitialId4PersistedGrantDbMigration -c PersistedGrantDbContext -o Migrations/PersistedGrantDb
+dotnet ef migrations add InitialPersistedGrantDbMigration -c PersistedGrantDbContext -o Migrations/PersistedGrantDb
 ```
 
 ```

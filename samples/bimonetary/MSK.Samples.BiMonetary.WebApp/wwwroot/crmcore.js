@@ -1,4 +1,4 @@
-var crmcore_ba1da6e54f0349dcd9a0 =
+var crmcore_0c8bd68a743b2e20a6cd =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -3734,7 +3734,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 // scan assets in all packages
-!(function webpackMissingModule() { var e = new Error("Cannot find module \"./modules\""); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+__webpack_require__(334)("./" + /^.*$/);
 
 /***/ }),
 /* 128 */
@@ -9065,6 +9065,140 @@ module.exports = function (regExp, replace) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 334 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./MSK.Application.Module.Identity/Content/css/site.css": 335,
+	"./MSK.Application.Module.Identity/Module.txt": 336,
+	"./MSK.Application.Module.Identity/Views/Account/Login.cshtml": 337,
+	"./MSK.Application.Module.Identity/Views/Account/Logout.cshtml": 338,
+	"./MSK.Application.Module.Identity/Views/Consent/Index.cshtml": 339,
+	"./MSK.Application.Module.Identity/Views/Consent/_ScopeListItem.cshtml": 340,
+	"./MSK.Application.Module.Identity/Views/Home/Error.cshtml": 341,
+	"./MSK.Application.Module.Identity/Views/_ViewImports.cshtml": 342,
+	"./MSK.Application.Module.Identity/Views/_ViewStart.cshtml": 343,
+	"./MSK.Application.Module.Migration/Module.txt": 344,
+	"./MSK.Core.Theme.Default/Content/css/site.css": 345,
+	"./MSK.Core.Theme.Default/Module.txt": 346,
+	"./MSK.Core.Theme.Default/Views/_Layout.cshtml": 347,
+	"./MSK.Core.Theme.Default/Views/_SimpleLayout.cshtml": 348,
+	"./MSK.Core.Theme.Default/Views/_ViewImports.cshtml": 349,
+	"./MSK.Support.Module.Swagger/Module.txt": 350
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 334;
+
+/***/ }),
+/* 335 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 336 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 337 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 338 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 339 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 340 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 341 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 342 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 343 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 344 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 345 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 346 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 347 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 348 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 349 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 350 */
+/***/ (function(module, exports) {
+
+
 
 /***/ })
 /******/ ]);

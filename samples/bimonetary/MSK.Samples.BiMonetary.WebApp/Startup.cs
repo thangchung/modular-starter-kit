@@ -1,7 +1,6 @@
 using System;
 using AspNetCore.RouteAnalyzer;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using MSK.Samples.BiMonetary.WebApp.Extensions;
 
@@ -12,14 +11,14 @@ namespace MSK.Samples.BiMonetary.WebApp
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             return services
-                .AddCryptoCurrency()
+                .AddBiMonetary()
                 .AddRouteAnalyzer()
                 .BuildServiceProvider();
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app)
         {
-            app.UseCryptoCurrency(preRouteAction: routes => {
+            app.UseBiMonetary(preRouteAction: routes => {
                 routes.MapRouteAnalyzer("/routes");
             });
         }

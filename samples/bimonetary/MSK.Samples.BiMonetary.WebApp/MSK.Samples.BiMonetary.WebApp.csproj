@@ -59,6 +59,8 @@
     <ProjectReference Include="..\..\..\src\MSK.Core.Theme.Default\MSK.Core.Theme.Default.csproj" />
     <ProjectReference Include="..\..\..\src\MSK.Support.Module.Swagger\MSK.Support.Module.Swagger.csproj" />
     <ProjectReference Include="..\MSK.Samples.BiMonetary.Migrator\MSK.Samples.BiMonetary.Migrator.csproj" />
+    <ProjectReference Include="..\MSK.Samples.BiMonetary.Module.CryptoCurrency\MSK.Samples.BiMonetary.Module.CryptoCurrency.csproj" />
+    <ProjectReference Include="..\MSK.Samples.BiMonetary.Module.Social\MSK.Samples.BiMonetary.Module.Social.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

@@ -1,7 +1,8 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+using System;
+using System.Collections.Generic;
 
-namespace MSK.Samples.BiMonetary.Migrator.Migrations.AppDbContext
+namespace MSK.Samples.BiMonetary.Migrator.Migrations.AppDb
 {
     public partial class InitDb : Migration
     {
@@ -22,30 +23,42 @@ namespace MSK.Samples.BiMonetary.Migrator.Migrations.AppDbContext
                 });
 
             migrationBuilder.CreateTable(
-                name: "AspNetUsers",
+                name: "msk_Relationships",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
-                    AccessFailedCount = table.Column<int>(nullable: false),
-                    ConcurrencyStamp = table.Column<string>(nullable: true),
-                    Email = table.Column<string>(maxLength: 256, nullable: true),
-                    EmailConfirmed = table.Column<bool>(nullable: false),
-                    FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true),
-                    LockoutEnabled = table.Column<bool>(nullable: false),
-                    LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
-                    NormalizedEmail = table.Column<string>(maxLength: 256, nullable: true),
-                    NormalizedUserName = table.Column<string>(maxLength: 256, nullable: true),
-                    PasswordHash = table.Column<string>(nullable: true),
-                    PhoneNumber = table.Column<string>(nullable: true),
-                    PhoneNumberConfirmed = table.Column<bool>(nullable: false),
-                    SecurityStamp = table.Column<string>(nullable: true),
-                    TwoFactorEnabled = table.Column<bool>(nullable: false),
-                    UserName = table.Column<string>(maxLength: 256, nullable: true)
+                    Created = table.Column<DateTime>(nullable: false),
+                    Updated = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                    table.PrimaryKey("PK_msk_Relationships", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "msk_Tickers",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    AvailableSupply = table.Column<double>(nullable: false),
+                    Created = table.Column<DateTime>(nullable: false),
+                    LastSyncWithService = table.Column<DateTime>(nullable: false),
+                    MarketCapUsd = table.Column<double>(nullable: false),
+                    Name = table.Column<string>(nullable: true),
+                    PercentChange1h = table.Column<string>(nullable: true),
+                    PercentChange24h = table.Column<string>(nullable: true),
+                    PercentChange7d = table.Column<string>(nullable: true),
+                    PriceBtc = table.Column<double>(nullable: false),
+                    PriceUsd = table.Column<double>(nullable: false),
+                    Rank = table.Column<int>(nullable: false),
+                    Symbol = table.Column<string>(nullable: true),
+                    TotalSupply = table.Column<double>(nullable: false),
+                    Updated = table.Column<DateTime>(nullable: false),
+                    Volumn24hUsd = table.Column<double>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_msk_Tickers", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -67,6 +80,47 @@ namespace MSK.Samples.BiMonetary.Migrator.Migrations.AppDbContext
                         principalTable: "AspNetRoles",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "AspNetUsers",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    AccessFailedCount = table.Column<int>(nullable: false),
+                    ConcurrencyStamp = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(maxLength: 256, nullable: true),
+                    EmailConfirmed = table.Column<bool>(nullable: false),
+                    FirstName = table.Column<string>(nullable: true),
+                    LastName = table.Column<string>(nullable: true),
+                    LockoutEnabled = table.Column<bool>(nullable: false),
+                    LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
+                    NormalizedEmail = table.Column<string>(maxLength: 256, nullable: true),
+                    NormalizedUserName = table.Column<string>(maxLength: 256, nullable: true),
+                    PasswordHash = table.Column<string>(nullable: true),
+                    PhoneNumber = table.Column<string>(nullable: true),
+                    PhoneNumberConfirmed = table.Column<bool>(nullable: false),
+                    RelationshipId = table.Column<Guid>(nullable: true),
+                    RelationshipId1 = table.Column<Guid>(nullable: true),
+                    SecurityStamp = table.Column<string>(nullable: true),
+                    TwoFactorEnabled = table.Column<bool>(nullable: false),
+                    UserName = table.Column<string>(maxLength: 256, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AspNetUsers_msk_Relationships_RelationshipId",
+                        column: x => x.RelationshipId,
+                        principalTable: "msk_Relationships",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_AspNetUsers_msk_Relationships_RelationshipId1",
+                        column: x => x.RelationshipId1,
+                        principalTable: "msk_Relationships",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -190,6 +244,16 @@ namespace MSK.Samples.BiMonetary.Migrator.Migrations.AppDbContext
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AspNetUsers_RelationshipId",
+                table: "AspNetUsers",
+                column: "RelationshipId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AspNetUsers_RelationshipId1",
+                table: "AspNetUsers",
+                column: "RelationshipId1");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -210,10 +274,16 @@ namespace MSK.Samples.BiMonetary.Migrator.Migrations.AppDbContext
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "msk_Tickers");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "msk_Relationships");
         }
     }
 }
