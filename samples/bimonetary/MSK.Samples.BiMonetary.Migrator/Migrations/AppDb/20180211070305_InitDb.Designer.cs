@@ -11,7 +11,7 @@ using System;
 namespace MSK.Samples.BiMonetary.Migrator.Migrations.AppDb
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180210050928_InitDb")]
+    [Migration("20180211070305_InitDb")]
     partial class InitDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -200,6 +200,34 @@ namespace MSK.Samples.BiMonetary.Migrator.Migrations.AppDb
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.CryptoCurrency.Models.LinkId", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<Guid?>("TickerId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TickerId");
+
+                    b.ToTable("msk_LinkIds");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.CryptoCurrency.Models.PostId", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<Guid?>("TickerId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TickerId");
+
+                    b.ToTable("msk_PostIds");
+                });
+
             modelBuilder.Entity("MSK.Samples.BiMonetary.Module.CryptoCurrency.Models.Ticker", b =>
                 {
                     b.Property<Guid>("Id")
@@ -238,6 +266,170 @@ namespace MSK.Samples.BiMonetary.Migrator.Migrations.AppDb
                     b.HasKey("Id");
 
                     b.ToTable("msk_Tickers");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.AuthorId", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("msk_AuthorIds");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.Comment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<Guid?>("AuthorId");
+
+                    b.Property<string>("Body");
+
+                    b.Property<DateTime>("Created");
+
+                    b.Property<Guid?>("LinkId");
+
+                    b.Property<Guid?>("PostId");
+
+                    b.Property<DateTime>("Updated");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("LinkId");
+
+                    b.HasIndex("PostId");
+
+                    b.ToTable("msk_Comments");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.Link", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("Created");
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Title");
+
+                    b.Property<DateTime>("Updated");
+
+                    b.Property<string>("Uri");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("msk_Links");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.LinkLike", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("Created");
+
+                    b.Property<Guid?>("LinkId");
+
+                    b.Property<DateTime>("Updated");
+
+                    b.Property<Guid?>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LinkId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("msk_LinkLikes");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.Post", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<Guid?>("AuthorId");
+
+                    b.Property<string>("Body");
+
+                    b.Property<DateTime>("Created");
+
+                    b.Property<DateTime>("Updated");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.ToTable("msk_Posts");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.PostLike", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("Created");
+
+                    b.Property<Guid?>("PostId");
+
+                    b.Property<DateTime>("Updated");
+
+                    b.Property<Guid?>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PostId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("msk_PostLikes");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.TickerId", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("msk_TickerIds");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.TickerLike", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("Created");
+
+                    b.Property<Guid?>("TickerId");
+
+                    b.Property<DateTime>("Updated");
+
+                    b.Property<Guid?>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TickerId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("msk_TickerLikes");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.UserId", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("msk_UserIds");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
@@ -294,6 +486,75 @@ namespace MSK.Samples.BiMonetary.Migrator.Migrations.AppDb
                     b.HasOne("MSK.Application.Module.Identity.Models.Relationship")
                         .WithMany("Followers")
                         .HasForeignKey("RelationshipId1");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.CryptoCurrency.Models.LinkId", b =>
+                {
+                    b.HasOne("MSK.Samples.BiMonetary.Module.CryptoCurrency.Models.Ticker")
+                        .WithMany("Links")
+                        .HasForeignKey("TickerId");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.CryptoCurrency.Models.PostId", b =>
+                {
+                    b.HasOne("MSK.Samples.BiMonetary.Module.CryptoCurrency.Models.Ticker")
+                        .WithMany("Posts")
+                        .HasForeignKey("TickerId");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.Comment", b =>
+                {
+                    b.HasOne("MSK.Samples.BiMonetary.Module.Social.Models.AuthorId", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId");
+
+                    b.HasOne("MSK.Samples.BiMonetary.Module.Social.Models.Link")
+                        .WithMany("Comments")
+                        .HasForeignKey("LinkId");
+
+                    b.HasOne("MSK.Samples.BiMonetary.Module.Social.Models.Post", "Post")
+                        .WithMany("Comments")
+                        .HasForeignKey("PostId");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.LinkLike", b =>
+                {
+                    b.HasOne("MSK.Samples.BiMonetary.Module.Social.Models.Link", "Link")
+                        .WithMany()
+                        .HasForeignKey("LinkId");
+
+                    b.HasOne("MSK.Samples.BiMonetary.Module.Social.Models.UserId", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.Post", b =>
+                {
+                    b.HasOne("MSK.Samples.BiMonetary.Module.Social.Models.AuthorId", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.PostLike", b =>
+                {
+                    b.HasOne("MSK.Samples.BiMonetary.Module.Social.Models.Post", "Post")
+                        .WithMany()
+                        .HasForeignKey("PostId");
+
+                    b.HasOne("MSK.Samples.BiMonetary.Module.Social.Models.UserId", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("MSK.Samples.BiMonetary.Module.Social.Models.TickerLike", b =>
+                {
+                    b.HasOne("MSK.Samples.BiMonetary.Module.Social.Models.TickerId", "Ticker")
+                        .WithMany()
+                        .HasForeignKey("TickerId");
+
+                    b.HasOne("MSK.Samples.BiMonetary.Module.Social.Models.UserId", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
         }

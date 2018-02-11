@@ -8,7 +8,7 @@ namespace MSK.Application.Module.Data.Extensions
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddDataApplicationModule(this IServiceCollection services)
+        public static IServiceCollection AddDataModule(this IServiceCollection services)
         {
             services.AddScoped(typeof(IEfRepositoryAsync<>), typeof(EfRepositoryAsync<>));
             services.AddScoped(typeof(IEfQueryRepository<>), typeof(EfQueryRepository<>));

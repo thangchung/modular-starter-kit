@@ -14,7 +14,7 @@ namespace MSK.Samples.BiMonetary.WebApp.Extensions
     {
         public static IServiceCollection AddBiMonetary(this IServiceCollection services)
         {
-            services.AddDataApplicationModule();
+            services.AddDataModule();
 
             var serviceProvider = services.BuildServiceProvider();
             var config = serviceProvider.GetService<IConfiguration>();

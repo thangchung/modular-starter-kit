@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\src\MSK.Application.Module.Data\MSK.Application.Module.Data.csproj" />
+    <ProjectReference Include="..\..\..\src\MSK.Application.Module.Migration\MSK.Application.Module.Migration.csproj" />
     <ProjectReference Include="..\..\..\src\MSK.Core.Module.Target\MSK.Core.Module.Target.csproj" />
   </ItemGroup>
 

@@ -1,10 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 using MSK.Core.Module.Entity;
 
 namespace MSK.Samples.BiMonetary.Module.CryptoCurrency.Models
 {
     public class Ticker : EntityBase
     {
+        public Ticker()
+        {
+            Posts = new HashSet<PostId>();
+            Links = new HashSet<LinkId>();
+        }
+
         public string Name { get; set; }
         public string Symbol { get; set; }
         public int Rank { get; set; }
@@ -18,5 +25,8 @@ namespace MSK.Samples.BiMonetary.Module.CryptoCurrency.Models
         public string PercentChange24h { get; private set; }
         public string PercentChange7d { get; private set; }
         public DateTime LastSyncWithService { get; private set; }
+
+        public ICollection<PostId> Posts { get; set; }
+        public ICollection<LinkId> Links { get; set; }
     }
 }
