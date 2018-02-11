@@ -19,8 +19,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-src/**/*.css
-public/**/styles
-public/**/images
-public/**/vendors

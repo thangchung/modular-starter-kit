@@ -7,7 +7,7 @@ namespace MSK.Samples.BiMonetary.Migrator
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args);
+            BuildWebHost(args).Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>

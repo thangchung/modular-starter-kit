@@ -10,6 +10,12 @@ The starter kits with entire modular approach to help remove boilerplate code in
   <img align="center" class="image" src="https://github.com/thangchung/modular-starter-kits/blob/master/assets/module-dependency.png">  
 </p>
 
+# Routers
+
+- http://localhost:8888/ui-swagger
+- http://localhost:8888/ui/graphiql
+- http://localhost:8888/ui/playground
+
 # Migration
 
 ```

@@ -6,6 +6,7 @@ using MSK.Application.Module.Data;
 using MSK.Application.Module.Data.Extensions;
 using MSK.Core.Module.Entity;
 using MSK.Core.Module.Mvc.Extensions;
+using MSK.Samples.BiMonetary.Module.GraphQL.Extensions;
 using MSK.Support.Module.Swagger.Extensions;
 
 namespace MSK.Samples.BiMonetary.WebApp.Extensions
@@ -47,9 +48,9 @@ namespace MSK.Samples.BiMonetary.WebApp.Extensions
                         .AllowCredentials());
             });
 
-            services.AddMvcModules();
             services.AddMySwagger();
-            // services.AddMyGraphQL();
+            services.AddMyGraphQL();
+            services.AddMvcModules();
 
             services.AddSpaStaticFiles(configuration =>
             {

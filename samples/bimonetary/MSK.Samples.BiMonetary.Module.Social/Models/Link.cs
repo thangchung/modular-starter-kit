@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MSK.Core.Module.Entity;
 
 namespace MSK.Samples.BiMonetary.Module.Social.Models

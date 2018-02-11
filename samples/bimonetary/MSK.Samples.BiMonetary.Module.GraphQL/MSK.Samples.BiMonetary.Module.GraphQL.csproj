@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GraphQL" Version="2.0.0-alpha-851" />
+    <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="2.0.10" />
+    <PackageReference Include="GraphQL.Server.Transports.WebSockets" Version="2.0.10" />
+    <PackageReference Include="GraphQL.Server.Ui.GraphiQL" Version="2.0.10" />
+    <PackageReference Include="GraphQL.Server.Ui.Playground" Version="2.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.0.1" />
+    <PackageReference Include="System.Reactive" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\MSK.Core.Module.Target\MSK.Core.Module.Target.csproj" />
+  </ItemGroup>
+
+</Project>

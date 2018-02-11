@@ -12,7 +12,7 @@ const NODE_PACKAGES_PATH = path.resolve(__dirname, 'node_modules');
 
 module.exports = {
   entry: {
-    crmcore: path.resolve(__dirname, 'index.js'),
+    bimonetary: path.resolve(__dirname, 'index.js'),
     vendors: [
       'jquery',
       'jquery-validation',

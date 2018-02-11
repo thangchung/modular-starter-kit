@@ -15,6 +15,7 @@
     <MvcRazorExcludeRefAssembliesFromPublish>false</MvcRazorExcludeRefAssembliesFromPublish>
     <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
     <UserSecretsId>dedf09db-5102-4cb4-8f49-f552900cf764</UserSecretsId>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -37,7 +38,7 @@
     <PackageReference Include="AspNetCore.RouteAnalyzer" Version="0.5.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.2" />
-    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.0.0-preview1-final" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.0.0-rc2-final" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.0.0" />
   </ItemGroup>
@@ -60,6 +61,7 @@
     <ProjectReference Include="..\..\..\src\MSK.Support.Module.Swagger\MSK.Support.Module.Swagger.csproj" />
     <ProjectReference Include="..\MSK.Samples.BiMonetary.Migrator\MSK.Samples.BiMonetary.Migrator.csproj" />
     <ProjectReference Include="..\MSK.Samples.BiMonetary.Module.CryptoCurrency\MSK.Samples.BiMonetary.Module.CryptoCurrency.csproj" />
+    <ProjectReference Include="..\MSK.Samples.BiMonetary.Module.GraphQL\MSK.Samples.BiMonetary.Module.GraphQL.csproj" />
     <ProjectReference Include="..\MSK.Samples.BiMonetary.Module.Social\MSK.Samples.BiMonetary.Module.Social.csproj" />
   </ItemGroup>
 

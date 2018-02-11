@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using MSK.Core.Module.Mvc.Extensions;
+using MSK.Samples.BiMonetary.Module.GraphQL.Extensions;
 using MSK.Support.Module.Swagger.Extensions;
 
 namespace MSK.Samples.BiMonetary.WebApp.Extensions
@@ -33,6 +34,9 @@ namespace MSK.Samples.BiMonetary.WebApp.Extensions
 
             app.UseCors("CorsPolicy");
 
+            app.UseMySwagger();
+            app.UseMyGraphQL();
+
             app.UseMvc(routes =>
             {
                 preRouteAction(routes);
@@ -41,8 +45,6 @@ namespace MSK.Samples.BiMonetary.WebApp.Extensions
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-
-            app.UseMySwagger();
 
             // https://gist.github.com/int128/e0cdec598c5b3db728ff35758abdbafd
             app.UseSpa(spa =>

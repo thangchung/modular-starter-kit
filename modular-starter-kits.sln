@@ -5,10 +5,7 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{94908AEB-886E-4D86-A905-F8D612D56999}"
 	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
-		global.json = global.json
 		LICENSE = LICENSE
-		NuGet.config = NuGet.config
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -57,6 +54,15 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Samples.BiMonetary.Module.CryptoCurrency", "samples\bimonetary\MSK.Samples.BiMonetary.Module.CryptoCurrency\MSK.Samples.BiMonetary.Module.CryptoCurrency.csproj", "{913FB0DD-6AEC-4E44-A2BA-47A438F30E96}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Samples.BiMonetary.Module.Social", "samples\bimonetary\MSK.Samples.BiMonetary.Module.Social\MSK.Samples.BiMonetary.Module.Social.csproj", "{8670F063-1811-4FD8-8E3D-06ABA4B2322F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{EEA24710-C34A-4D85-B7A8-EB0506637B21}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		global.json = global.json
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSK.Samples.BiMonetary.Module.GraphQL", "samples\bimonetary\MSK.Samples.BiMonetary.Module.GraphQL\MSK.Samples.BiMonetary.Module.GraphQL.csproj", "{322BD315-2EB0-4277-AFEA-8FE85F9D025B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -120,6 +126,10 @@ Global
 		{8670F063-1811-4FD8-8E3D-06ABA4B2322F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8670F063-1811-4FD8-8E3D-06ABA4B2322F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8670F063-1811-4FD8-8E3D-06ABA4B2322F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{322BD315-2EB0-4277-AFEA-8FE85F9D025B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{322BD315-2EB0-4277-AFEA-8FE85F9D025B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{322BD315-2EB0-4277-AFEA-8FE85F9D025B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{322BD315-2EB0-4277-AFEA-8FE85F9D025B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,6 +152,8 @@ Global
 		{61819A5C-7855-43CC-BF48-64B2FAFEDBF2} = {4B213888-3705-409C-8C91-46065046EB59}
 		{913FB0DD-6AEC-4E44-A2BA-47A438F30E96} = {5D65C946-C776-40FE-90D8-9E61E08530E6}
 		{8670F063-1811-4FD8-8E3D-06ABA4B2322F} = {5D65C946-C776-40FE-90D8-9E61E08530E6}
+		{EEA24710-C34A-4D85-B7A8-EB0506637B21} = {4B1647E6-5262-4799-839E-E0F458EF0A85}
+		{322BD315-2EB0-4277-AFEA-8FE85F9D025B} = {5D65C946-C776-40FE-90D8-9E61E08530E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1778A799-EEAD-4A1E-BF1D-F243DD42978C}
