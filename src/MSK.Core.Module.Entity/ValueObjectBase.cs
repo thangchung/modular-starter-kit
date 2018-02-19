@@ -19,7 +19,7 @@ namespace MSK.Core.Module.Entity
 
         public override int GetHashCode()
         {
-            return HashCodeExtensions.CombineHashCodes(GetEqualityComponents());
+            return HashExtensions.CombineHashCodes(GetEqualityComponents());
         }
     }
 }

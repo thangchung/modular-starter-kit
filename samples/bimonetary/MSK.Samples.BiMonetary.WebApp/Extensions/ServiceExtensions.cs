@@ -50,6 +50,7 @@ namespace MSK.Samples.BiMonetary.WebApp.Extensions
 
             services.AddMySwagger();
             services.AddMyGraphQL();
+
             services.AddMvcModules();
 
             services.AddSpaStaticFiles(configuration =>
