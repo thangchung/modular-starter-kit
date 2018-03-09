@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Title>The mime type detector for files.</Title>
+    <Description>The mime type detector for files (e.g. png, gif, jpeg, rtf, pdf, docx, zip, rar,...).</Description>
+    <Summary>The mime type detector for files helps to prevent attacker trying to upload or attack damage files to the web server.</Summary>
+    <Version>0.0.1</Version>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <AssemblyVersion>0.0.1</AssemblyVersion>
+    <FileVersion>0.0.1</FileVersion>
+    <Authors>Thang Chung</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <WarningsAsErrors>true</WarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>MSK.MimeTypeDetector</PackageId>
+    <PackageTags>mine-type minetype-detector owasp security web-security</PackageTags>
+    <PackageProjectUrl>https://github.com/thangchung/modular-starter-kits</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/thangchung/modular-starter-kits/blob/master/LICENSE</PackageLicenseUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/thangchung/modular-starter-kits.git</RepositoryUrl>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <RootNamespace>MSK.Support.Module.MineTypeDetector</RootNamespace>
+    <Copyright>Copyright (c) Thang Chung - 2018</Copyright>
+  </PropertyGroup>
+
+</Project>
