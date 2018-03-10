@@ -2,6 +2,13 @@
 
 The starter kits with entire modular approach to help remove boilerplate code in developing
 
+# Nuget packages
+
+- MSK.CoreModule.Utils module: this utils library contains ultility functions and helpers (e.g. string, bytes, hash, modular,...).
+  - Nuget: https://www.nuget.org/packages/MSK.CoreModule.Utils
+- MSK.SupportModule.MineTypeDetector module: the mime type detector for files (e.g. png, gif, jpeg, rtf, pdf, docx, zip, rar,...).
+  - Nuget: https://www.nuget.org/packages/MSK.SupportModule.MimeTypeDetector
+
 # Modular Architecture
 
 - Module Dependency

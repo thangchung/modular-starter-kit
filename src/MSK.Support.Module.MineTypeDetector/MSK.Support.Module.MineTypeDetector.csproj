@@ -14,7 +14,7 @@
     <WarningsAsErrors>true</WarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageId>MSK.SupportModule.MimeTypeDetector</PackageId>
-    <PackageTags>mine-type minetype-detector owasp security web-security</PackageTags>
+    <PackageTags>msk mine-type minetype-detector owasp security web-security</PackageTags>
     <PackageProjectUrl>https://github.com/thangchung/modular-starter-kit/tree/master/src/MSK.Support.Module.MineTypeDetector</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/thangchung/modular-starter-kit/blob/master/LICENSE</PackageLicenseUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
