@@ -13,13 +13,13 @@
     <OutputType>Library</OutputType>
     <WarningsAsErrors>true</WarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageId>MSK.MimeTypeDetector</PackageId>
+    <PackageId>MSK.SupportModule.MimeTypeDetector</PackageId>
     <PackageTags>mine-type minetype-detector owasp security web-security</PackageTags>
-    <PackageProjectUrl>https://github.com/thangchung/modular-starter-kits</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/thangchung/modular-starter-kits/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/thangchung/modular-starter-kit/tree/master/src/MSK.Support.Module.MineTypeDetector</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/thangchung/modular-starter-kit/blob/master/LICENSE</PackageLicenseUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/thangchung/modular-starter-kits.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/thangchung/modular-starter-kit.git</RepositoryUrl>
     <NeutralLanguage>en-US</NeutralLanguage>
     <RootNamespace>MSK.Support.Module.MineTypeDetector</RootNamespace>
     <Copyright>Copyright (c) Thang Chung - 2018</Copyright>

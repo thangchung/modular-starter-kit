@@ -1,6 +1,6 @@
 # Mime Type Detector
 
-This is a sub-module in [Modular Starter Kits](https://github.com/thangchung/modular-starter-kits) project
+This is a sub-module of [Modular Starter Kit](https://github.com/thangchung/modular-starter-kit) project.
 The mime type detector for files (e.g. png, gif, jpeg, rtf, pdf, docx, zip, rar,...) helps to prevent attacker trying to upload or attack damage files to the web server.
 Reference to [OWASP Top 10 - 2017](https://www.owasp.org/index.php/Top_10-2017_Top_10) for the risks.
 

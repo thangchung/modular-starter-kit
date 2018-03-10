@@ -1,29 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>This utils library contains all ultilities that need for web development using Modular Starter Kits.</Description>
-    <Authors>thangchung</Authors>
-    <RootNamespace>MSK.Core.Module.Utils</RootNamespace>
-    <PackageId>msk-core-module-utils</PackageId>
-    <PackageTags>msk;modular;starter;module;software-architecture</PackageTags>
-    <PackageProjectUrl>https://github.com/thangchung/modular-starter-kits</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/thangchung/modular-starter-kits/blob/master/LICENSE</PackageLicenseUrl>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/thangchung/modular-starter-kits.git</RepositoryUrl>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <OutputType>Library</OutputType>
+    <Title>MSK: This utils library contains ultility functions and helpers (e.g. string, bytes, hash, modular).</Title>
+    <Description>The need utilities for the web development using in Modular Starter Kit.</Description>
+    <Summary>This utils library contains ultility functions and helpers (e.g. string, bytes, hash, modular) that need for the web development using in Modular Starter Kit.</Summary>
     <Version>0.0.1</Version>
     <VersionPrefix>0.0.1</VersionPrefix>
-    <AssemblyVersion>0.0.1.0</AssemblyVersion>
-    <FileVersion>0.0.1.0</FileVersion>
-    <NeutralLanguage>en-US</NeutralLanguage>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
-    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <AssemblyVersion>0.0.1</AssemblyVersion>
+    <FileVersion>0.0.1</FileVersion>
+    <Authors>Thang Chung</Authors>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
     <WarningsAsErrors>true</WarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>MSK.CoreModule.Utils</PackageId>
+    <PackageTags>msk utils web-development hash modular</PackageTags>
+    <PackageProjectUrl>https://github.com/thangchung/modular-starter-kit/tree/master/src/MSK.Core.Module.Utils</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/thangchung/modular-starter-kit/blob/master/LICENSE</PackageLicenseUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/thangchung/modular-starter-kit.git</RepositoryUrl>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <RootNamespace>MSK.Core.Module.Utils</RootNamespace>
+    <Copyright>Copyright (c) Thang Chung - 2018</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
