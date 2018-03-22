@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MSK.Application.Module.Data.Impl;
-using MSK.Core.Module.Entity;
+using MSK.Core.Module.Domain;
 
 namespace MSK.Application.Module.Data.Extensions
 {

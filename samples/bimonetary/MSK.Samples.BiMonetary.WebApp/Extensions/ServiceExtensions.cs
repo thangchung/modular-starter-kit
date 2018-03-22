@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MSK.Application.Module.Data;
 using MSK.Application.Module.Data.Extensions;
-using MSK.Core.Module.Entity;
+using MSK.Core.Module.Domain;
 using MSK.Core.Module.Mvc.Extensions;
 using MSK.Samples.BiMonetary.Module.GraphQL.Extensions;
 using MSK.Support.Module.Swagger.Extensions;

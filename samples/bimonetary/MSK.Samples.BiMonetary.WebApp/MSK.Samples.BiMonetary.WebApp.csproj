@@ -53,7 +53,6 @@
     <ProjectReference Include="..\..\..\src\MSK.Application.Module.Identity\MSK.Application.Module.Identity.csproj" />
     <ProjectReference Include="..\..\..\src\MSK.Application.Module.Migration\MSK.Application.Module.Migration.csproj" />
     <ProjectReference Include="..\..\..\src\MSK.Application.Module.Target\MSK.Application.Module.Target.csproj" />
-    <ProjectReference Include="..\..\..\src\MSK.Core.Module.Entity\MSK.Core.Module.Entity.csproj" />
     <ProjectReference Include="..\..\..\src\MSK.Core.Module.Mvc\MSK.Core.Module.Mvc.csproj" />
     <ProjectReference Include="..\..\..\src\MSK.Core.Module.Target\MSK.Core.Module.Target.csproj" />
     <ProjectReference Include="..\..\..\src\MSK.Core.Module.Utils\MSK.Core.Module.Utils.csproj" />

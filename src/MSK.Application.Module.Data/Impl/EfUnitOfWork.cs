@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using MSK.Core.Module.Entity;
+using MSK.Core.Module.Domain;
 
 namespace MSK.Application.Module.Data.Impl
 {

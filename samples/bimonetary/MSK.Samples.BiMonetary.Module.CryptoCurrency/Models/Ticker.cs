@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using MSK.Core.Module.Entity;
+using MSK.Core.Module.Domain;
 
 namespace MSK.Samples.BiMonetary.Module.CryptoCurrency.Models
 {

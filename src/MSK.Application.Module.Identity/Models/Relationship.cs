@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using MSK.Core.Module.Entity;
-using MSK.Core.Module.Entity.Identity;
+using MSK.Core.Module.Domain;
+using MSK.Core.Module.Domain.Identity;
 
 namespace MSK.Application.Module.Identity.Models
 {

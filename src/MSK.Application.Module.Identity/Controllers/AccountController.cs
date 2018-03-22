@@ -14,7 +14,7 @@ using Microsoft.Extensions.Logging;
 using MSK.Application.Module.Identity.Models;
 using MSK.Application.Module.Identity.Services;
 using MSK.Application.Module.Identity.ViewModels;
-using MSK.Core.Module.Entity.Identity;
+using MSK.Core.Module.Domain.Identity;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

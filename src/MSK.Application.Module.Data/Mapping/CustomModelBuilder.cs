@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MSK.Core.Module.Entity;
+using MSK.Core.Module.Domain;
 
 namespace MSK.Application.Module.Data.Mapping
 {

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Reflection;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MSK.Core.Module.Entity;
-using MSK.Core.Module.Entity.Identity;
+using MSK.Core.Module.Domain;
+using MSK.Core.Module.Domain.Identity;
 using MSK.Core.Module.Mvc.Extensions;
 
 namespace MSK.Application.Module.Data

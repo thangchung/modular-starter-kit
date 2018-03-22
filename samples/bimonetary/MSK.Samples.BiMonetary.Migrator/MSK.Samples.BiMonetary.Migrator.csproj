@@ -28,7 +28,6 @@
     <ProjectReference Include="..\..\..\src\MSK.Application.Module.Identity\MSK.Application.Module.Identity.csproj" />
     <ProjectReference Include="..\..\..\src\MSK.Application.Module.Migration\MSK.Application.Module.Migration.csproj" />
     <ProjectReference Include="..\..\..\src\MSK.Application.Module.Target\MSK.Application.Module.Target.csproj" />
-    <ProjectReference Include="..\..\..\src\MSK.Core.Module.Entity\MSK.Core.Module.Entity.csproj" />
     <ProjectReference Include="..\..\..\src\MSK.Core.Module.Utils\MSK.Core.Module.Utils.csproj" />
     <ProjectReference Include="..\MSK.Samples.BiMonetary.Module.CryptoCurrency\MSK.Samples.BiMonetary.Module.CryptoCurrency.csproj" />
     <ProjectReference Include="..\MSK.Samples.BiMonetary.Module.Social\MSK.Samples.BiMonetary.Module.Social.csproj" />

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using MSK.Core.Module.Entity;
+using MSK.Core.Module.Domain;
 
 namespace MSK.Application.Module.Data.Extensions
 {

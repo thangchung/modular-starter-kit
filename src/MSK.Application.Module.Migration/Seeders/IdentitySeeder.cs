@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using MSK.Application.Module.Data;
-using MSK.Core.Module.Entity.Identity;
+using MSK.Core.Module.Domain.Identity;
 using MSK.Core.Module.Utils;
 using MSK.Core.Module.Utils.Helpers;
 

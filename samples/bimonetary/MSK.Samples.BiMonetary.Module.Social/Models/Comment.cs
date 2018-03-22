@@ -1,4 +1,4 @@
-﻿using MSK.Core.Module.Entity;
+﻿using MSK.Core.Module.Domain;
 
 namespace MSK.Samples.BiMonetary.Module.Social.Models
 {

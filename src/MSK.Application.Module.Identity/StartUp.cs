@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using MSK.Application.Module.Data;
 using MSK.Application.Module.Identity.Extensions;
 using MSK.Application.Module.Identity.Services;
-using MSK.Core.Module.Entity.Identity;
+using MSK.Core.Module.Domain.Identity;
 using MSK.Core.Module.Mvc;
 
 namespace MSK.Application.Module.Identity
